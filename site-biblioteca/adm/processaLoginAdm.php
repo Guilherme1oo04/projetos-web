@@ -9,7 +9,7 @@
         header("location: index.php");
     }
     else{
-        if ($nomeAdm == 'adm' && $senhaAdm == 'senhadoadmkk'){
+        if ($nomeAdm == 'adm' && $senhaAdm == 'senha1234adm'){
             $_SESSION['nomeadm'] = $nomeAdm;
             $_SESSION['senhaadm'] = $senhaAdm;
             header("location: adm.php");
