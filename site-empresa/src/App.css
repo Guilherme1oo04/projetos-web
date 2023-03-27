@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color1: #5E17EB;
+    --color2: #9DACFF;
+    --color3: #FFFFFF;
+    --color4: #55DBCB;
+    --color5: #000817;
+}
+
+body{
+    background-color: var(--color5);
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color5);
+}
+
+::-webkit-scrollbar{
+    background-color: var(--color5);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color1);
+    border-radius: 20px;
+}
+
+/*Menu do site*/
+header{
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.logo img{
+    max-width: 130px;
+}
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color1);
+    padding: 5px;
+    border-radius: 5px;
+}
+nav a:hover{
+    color: #fff;
+}
+
+/*Services*/
+.services{
+    background-color: var(--color5);
+}
+.inicio, .ambientes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.services .img-service img{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+.inicio h1{
+    font-size: 3em;
+    color: var(--color1);
+    text-shadow: 1px 1px 5px black;
+}
+.inicio h2, .ambientes h2{
+    font-size: 2em;
+    color: var(--color2);
+    text-shadow: 1px 1px 5px black;
+}
+.inicio p, .ambientes p{
+    font-size: 20px;
+    text-align: justify;
+    color: var(--color3);
+    max-width: 700px;
+}
+
+#ultimoAmbiente{
+    margin-bottom: 0;
+}
+
+/*Contact*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact h1{
+    color: var(--color2);
+    font-size: 3em;
+    margin-top: 80px;
+    text-shadow: 1px 1px 5px black;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+.card .celular img{
+    max-width: 300px;
+}
+.contatos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.contatos img{
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.contatos h2{
+    color: var(--color2);
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px black;
+}
+
+/*Quem Somos*/
+.sobre{
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.sobre div{
+    margin: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.sobre div h1{
+    font-size: 2em;
+    color: var(--color2);
+    text-shadow: 1px 1px 5px black;
+}
+.sobre div p{
+    color: var(--color3);
+    font-size: 20px;
+}
+
+/*Portifólio Guilherme*/
+
+.quem-sou-eu{
+    margin: auto;
+    margin-top: 15vh;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quem-sou-eu h1{
+    padding-left: 20px;
+    color: var(--color2);
+    text-shadow: 1px 1px 5px black;
+}
+.quem-sou-eu .titulo-animado{
+    margin-top: -20px;
+}
+
+.quem-sou-eu .foto img{
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--color3);
+}
+
+.habilidades{
+    max-width: 800px;
+    color: var(--color2);
+    text-shadow: 1px 1px 5px black;
+    margin: auto;
+    text-align: justify;
+}
+
+.habilidades .img-tech{
+    max-width: 600px;
+    margin: auto;
+}
+
+.projetos h1{
+    color: var(--color1);
+    text-shadow: 1px 1px 5px black;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.projetos .projeto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.projetos .projeto img{
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.projetos .projeto .info h2{
+    color: var(--color1);
+    font-size: 2em;
+}
+.projetos .projeto .info p{
+    color: var(--color3);
+    font-size: 1.5em;
+    text-align: justify;
+    padding-right: 10px;
+}
+.projetos .projeto .info a{
+    color: var(--color2);
+    font-size: 1em;
+    text-align: justify;
+    padding-right: 10px;
+}
